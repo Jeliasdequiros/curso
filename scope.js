@@ -1,4 +1,4 @@
-// Alcance de los datos dentro del código de
+//  Es el alcance de los datos.
 
 // // SCOPE GLOBAL 
 const dni= '78787878z'
@@ -14,10 +14,12 @@ const dni= '78787878z'
 
 // función lo mejor es limitarse a variables / constantes internas
 
-// Desde LOCAL puedo accder a GLOBAL, pero no al revés
+// Desde LOCAL puedo acceder a GLOBAL, pero no al revés
+
+//// Las funciones SOLO deberían tener variables locales, mucho cuidado a utilizar variables globales. Las constantes en valores globales nos evitan errores.
 
 function carnet (){
-    let id = 'Andrés Felpe Cosa'
+    let id = 'Andrés Felipe Cosa'
     console.log(`id = ${dni}`)
 }
 

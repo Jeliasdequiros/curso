@@ -81,7 +81,7 @@
 
     // VALORES DE RETORNO
     // return 
-        // Al utilizar (return) hay que tener en cuenta que la función finaliza.
+        // Al utilizar (return) hay que tener en cuenta que la función finaliza en esa línea.
         // El return no es obligatorio.
 
 // function unirNombreApellidos(nombre, apellidos){

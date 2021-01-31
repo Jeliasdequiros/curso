@@ -1,0 +1,32 @@
+
+
+
+// La idea es que a partir de que introduzcamos los números del Dni y la letra nos compruebe si pertenece a un Dni verdadero o no.
+
+function nueva(){         // creamos una función y la declaramos "nombramos" como nueva (), para más tarde, cuando la necesitemos; llamarla o ejecutarla.
+
+    // Base de datos 
+    // Array
+    const letras_Dni = ['T', 'R', 'W', 'A', 'G', 'M', 'Y' ,'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E']  // Podemos usar tanto constantes como variables para definirlo, pero al ser texto invariable, mejor usar una constante
+
+// Mediante el uso de prompt, conseguiremos que el navegador, nos pregunte a modo de formulario los datos que le pedimos que nos muestre: 
+        let numero = prompt ("Introduce tu número de DNI (sin la letra)")
+        let letra = prompt("Introduce la letra de tu DNI (en mayúsculas)").toUpperCase()
+    
+// Le decimos que tipos de datos permitimos o no, en nuestro caso no permitimos números menores a cero, como los negativos ó (||) que tengan más de 8 cifras ya que el 999999999 sería el mayor número posible
+        if (numero < 0 || numero > 99999999){
+            alert("Disculpe, el número proporcionado no es válido");
+        } 
+        else{
+            let letracalculada = letras_Dni [numero % 23] // Fórmula para comprobar los números del Dni con la letra asociada a cada letra de la tabla
+            if (letracalculada != letra) {                // En el caso que la letra introducida, no se corresponda con los de la fórmula (números + letra dni) aparecerá el mensaje de alert!!!        false
+                alert ("Disculpe, la letra o el número proporcionados no son válidos")
+            }
+            else{                                         // En el caso que el número o la letra introducida, se correspondan con la de la fórmula aparecerá el mensaje de alert!!!            true
+                alert("Gracias, el número de DNI y su letra son correctos")
+            }
+        }
+}
+
+nueva ()        // Aquí llamamos a la función
+

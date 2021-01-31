@@ -4,7 +4,7 @@
 
 // BAse de datos 
 // Array 
-const LETRAS_DNI = ['T', 'R', 'W', 'A', 'G', 'M', 'Y']
+const LETRAS_DNI = ['T','R','W','A','G','M','Y']
 // Preguntar al usuario, los números de su dni
 let numeroDNI = prompt("No sabes tu letra de DNI? Escribe aquí tus números")
 
@@ -23,7 +23,7 @@ while (numeroDNI != 'salir') {
             numeroDNI = 'salir'
             break
             default: 
-                alert(`DNI: ${numeroDNI)--${LETRAS_DNI[resto]}`)
+                alert(`DNI: ${numeroDNI}-${LETRAS_DNI[resto]}`)
                 numeroDNI = 'salir'
             break
     }
